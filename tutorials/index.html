@@ -6,7 +6,120 @@
     <title>Tutorials - Liping Zheng</title>
 </head>
 <style>
-    /* [Previous styles remain the same - include all styles from index.html] */
+    /* Your existing styles */
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h1, h2, h3 {
+        font-family: Arvo, Monaco, serif;
+        line-height: 1.3;
+        font-weight: normal;
+    }
+    h1, h2, h3 {
+        display: block;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #232323;
+        margin: 36px 0 10px;
+    }
+    p {
+        margin: 0 0 22px;
+        padding: 10px 50px 0 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #232323;
+        line-height: 1.8em;
+    }
+
+    /* Updated navigation styles */
+    .header {
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+    }
+
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        text-align: right; /* Align items to the right */
+    }
+
+    .nav-menu {
+        display: inline-block; /* Display as inline block for natural text alignment */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        margin-left: 2rem;
+    }
+
+    .nav-link {
+        color: #232323;
+        text-decoration: none;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        padding: 0.5rem;
+        transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+        color: #007bff;
+    }
+
+    /* Container for main content */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    /* Responsive navigation */
+    .nav-toggle {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        float: right;
+    }
+
+    @media (max-width: 768px) {
+        .nav-toggle {
+            display: block;
+        }
+
+        .nav-menu {
+            display: none;
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .nav-menu.active {
+            display: block;
+        }
+
+        .nav-menu li {
+            display: block;
+            margin: 1rem 0;
+        }
+    }
+
+    /* Footer styles */
+    footer {
+        margin-top: 4rem;
+        padding: 2rem;
+        text-align: center;
+        border-top: 1px solid #ccc;
+    }
     
     /* Additional styles for tutorials */
     .tutorial-list {
@@ -83,22 +196,22 @@
             
             <div class="tutorial-list">
                 <article class="tutorial-item">
-                    <h2>Introduction to Data Analysis with Python</h2>
+                    <h2>Tutorial 1</h2>
                     <div class="tutorial-meta">
                         Published: January 15, 2024
                         <span class="difficulty beginner">Beginner</span>
                     </div>
-                    <p>Learn the basics of data analysis using Python, including pandas, numpy, and matplotlib.</p>
+                    <p>Tutorial descriptions</p>
                     <a href="#" class="read-more">Read Tutorial →</a>
                 </article>
 
                 <article class="tutorial-item">
-                    <h2>Advanced Machine Learning Techniques</h2>
+                    <h2>Tutorial 2</h2>
                     <div class="tutorial-meta">
                         Published: February 1, 2024
                         <span class="difficulty advanced">Advanced</span>
                     </div>
-                    <p>Deep dive into advanced machine learning concepts and their implementation.</p>
+                    <p>Tutorial descriptions</p>
                     <a href="#" class="read-more">Read Tutorial →</a>
                 </article>
 
