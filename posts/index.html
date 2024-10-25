@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts - Liping Zheng</title>
+</head>
+<style>
+    /* [Previous styles remain the same - include all styles from index.html] */
+    
+    /* Additional styles for posts */
+    .post-list {
+        margin-top: 2rem;
+    }
+
+    .post-item {
+        margin-bottom: 3rem;
+    }
+
+    .post-meta {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 0.5rem;
+    }
+
+    .post-excerpt {
+        margin: 1rem 0;
+    }
+
+    .post-categories {
+        margin-top: 1rem;
+    }
+
+    .category {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 15px;
+        font-size: 12px;
+        background-color: #f0f0f0;
+        color: #666;
+        margin-right: 0.5rem;
+    }
+
+    .read-more {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .read-more:hover {
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <!-- [Navigation remains the same as index.html] -->
+    <header class="header">
+        <nav class="nav-container">
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/projects" class="nav-link">Projects</a></li>
+                <li><a href="/tutorials" class="nav-link">Tutorials</a></li>
+                <li><a href="/posts" class="nav-link">Posts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <h1>Posts</h1>
+            <p>Thoughts and insights on data science, machine learning, and teaching.</p>
+            
+            <div class="post-list">
+                <article class="post-item">
+                    <h2>The Future of Data Analytics in Business</h2>
+                    <div class="post-meta">March 15, 2024</div>
+                    <div class="post-excerpt">
+                        <p>Exploring how emerging technologies are shaping the future of business analytics and decision-making processes.</p>
+                    </div>
+                    <div class="post-categories">
+                        <span class="category">Data Analytics</span>
+                        <span class="category">Business Intelligence</span>
+                    </div>
+                    <a href="#" class="read-more">Read More →</a>
+                </article>
+
+                <article class="post-item">
+                    <h2>Teaching Data Science: Challenges and Solutions</h2>
+                    <div class="post-meta">March 1, 2024</div>
+                    <div class="post-excerpt">
+                        <p>Insights from my experience teaching data science and analytics at the university level.</p>
+                    </div>
+                    <div class="post-categories">
+                        <span class="category">Education</span>
+                        <span class="category">Data Science</span>
+                    </div>
+                    <a href="#" class="read-more">Read More →</a>
+                </article>
+
+                <!-- Add more post items as needed -->
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Liping Zheng. All rights reserved.</p>
+    </footer>
+
+    <!-- [JavaScript remains the same as index.html] -->
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
