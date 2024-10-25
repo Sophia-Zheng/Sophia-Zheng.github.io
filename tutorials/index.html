@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials - Liping Zheng</title>
+</head>
+<style>
+    /* [Previous styles remain the same - include all styles from index.html] */
+    
+    /* Additional styles for tutorials */
+    .tutorial-list {
+        margin-top: 2rem;
+    }
+
+    .tutorial-item {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    .tutorial-item:last-child {
+        border-bottom: none;
+    }
+
+    .tutorial-meta {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 1rem;
+    }
+
+    .difficulty {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 15px;
+        font-size: 12px;
+        margin-left: 1rem;
+    }
+
+    .beginner {
+        background-color: #e1f5e1;
+        color: #2d712d;
+    }
+
+    .intermediate {
+        background-color: #fff3cd;
+        color: #856404;
+    }
+
+    .advanced {
+        background-color: #f8d7da;
+        color: #721c24;
+    }
+
+    .read-more {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .read-more:hover {
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <!-- [Navigation remains the same as index.html] -->
+    <header class="header">
+        <nav class="nav-container">
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/projects" class="nav-link">Projects</a></li>
+                <li><a href="/tutorials" class="nav-link">Tutorials</a></li>
+                <li><a href="/posts" class="nav-link">Posts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <h1>Tutorials</h1>
+            <p>Learn about data analysis, machine learning, and business intelligence through step-by-step tutorials.</p>
+            
+            <div class="tutorial-list">
+                <article class="tutorial-item">
+                    <h2>Introduction to Data Analysis with Python</h2>
+                    <div class="tutorial-meta">
+                        Published: January 15, 2024
+                        <span class="difficulty beginner">Beginner</span>
+                    </div>
+                    <p>Learn the basics of data analysis using Python, including pandas, numpy, and matplotlib.</p>
+                    <a href="#" class="read-more">Read Tutorial →</a>
+                </article>
+
+                <article class="tutorial-item">
+                    <h2>Advanced Machine Learning Techniques</h2>
+                    <div class="tutorial-meta">
+                        Published: February 1, 2024
+                        <span class="difficulty advanced">Advanced</span>
+                    </div>
+                    <p>Deep dive into advanced machine learning concepts and their implementation.</p>
+                    <a href="#" class="read-more">Read Tutorial →</a>
+                </article>
+
+                <!-- Add more tutorial items as needed -->
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Liping Zheng. All rights reserved.</p>
+    </footer>
+
+    <!-- [JavaScript remains the same as index.html] -->
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
